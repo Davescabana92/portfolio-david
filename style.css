@@ -129,4 +129,41 @@ section h3{
         flex-direction: row;
         justify-content: space-between;
     }
+
+    .hero_description{
+        .line-heights{
+            max-width: 80%;
+            margin: auto;
+        }
+    }
+}
+
+@media (min-width:1024px){
+    .hero{
+        display: flex;
+        gap: 1rem;
+    
+    }
+    .hero_description{
+        .line-heihts{
+            margin: 0;
+        }
+    }
+    .hero__btn{
+        justify-content: flex-start;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: auto;
+        max-width: 90%;
+        align-items: flex-start;
+
+
+    }
+    .footer-section{
+        text-align: left;
+    }
 }
