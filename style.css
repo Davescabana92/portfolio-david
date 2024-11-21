@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    list-style: none;
+    color:black
+}
+
+header{
+    text-align: center;
+    padding: 1rem;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 1rem;
+}
+.line-heigths{
+    line-height: 1.5rem;
+}
+
+.nav__logo{
+    font-weight: bold;
+}
+
+.nav__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.nav__list li:not(:last-child){
+    border-right: 1px solid black;
+    padding: 0 1rem;
+}
+
+.hero{
+    padding:5rem 0;
+}
+
+.hero__image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__image-img{
+
+    width: 18rem;
+    height: 18rem;
+    border-radius: 50%;
+
+}
+.hero_description{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.description-title{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.btn-link{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.bg-yellow{
+    background-color: yellow;
+}
+
+.bg-red{
+    background-color: red;
+}
+.bg-cyan{
+    background-color: cyan;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+}
+.footer-section{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+}
+section h3{
+    font-weight: bold;
+}
+.separator{
+    margin: auto;
+    width: 90%;
+    border: 1px solid black;
+}
+
+/*responsive*/
+
+@media screen and (min-width:768px){
+    header nav{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
